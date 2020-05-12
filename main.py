@@ -6,7 +6,7 @@ menu = 0
 answer1 = 'No, no, n, N'
 answer2 = 'Yes, yes, y, Y'
 
-while menu != 4:
+while menu != 4: #Fel?
     print('Välja bland menyerna (1= Visa alla logg, 2= Skapa ny logg, 3= Spara loggfilen, 4= exit programmen')
     a = int(input('Val: '))
     print('\v')
