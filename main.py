@@ -5,19 +5,42 @@ print('\v')
 menu = 0
 answer1 = 'No, no, n, N' #Svar för nej ska leda ur programmen
 answer2 = 'Yes, yes, y, Y' #svar för ja ska leda in till programmen
+logg = [1 "år" "månad" "dag", 2 "år" "månad" "dag", 3 "år" "månad" "dag", 4 "år" "månad" "dag"] #planera att lopa listan med "for x in logg  print(logg)"
 
-while menu != 4: #Fel?
+while menu != 4: 
     print('Välja bland menyerna (1= Visa alla logg, 2= Skapa ny logg, 3= Spara loggfilen, 4= exit programmen')
-    a = int(input('Val: '))
+    menu = int(input('Val: '))
     print('\v')
 
     if menu == 1:
         print('\v')
         print('Är du säker du har valt? Visa logg? Yes, yes, y, Y')
         answer = input('Yes or No ?: ')
+        if answer2:
+           for x in logg
+            print(x)
+
+        elif answer1:
+            menu = 0
+            
+        else:
+            ValueError
+            print("fel svar, endast: yes or no")
+       
     
     elif menu == 2:
-        print('skapa ny logg')
+        print('skapa ny logg') 
+        print('\v')
+        print('Är du säker du har valt? Visa logg? Yes, yes, y, Y')
+        if answer2:
+           logg.append
+
+        elif answer1:
+            menu = 0
+            
+        else:
+            ValueError
+            print("fel svar, endast: yes or no")
     
     elif menu == 3:
         print('spara logen')
@@ -28,3 +51,7 @@ while menu != 4: #Fel?
     
     else:
         print('Nånting gick fel')
+
+
+
+# https://www.w3schools.com/python/python_lists.asp
