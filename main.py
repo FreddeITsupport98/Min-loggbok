@@ -5,7 +5,9 @@ print('\v')
 menu = 0
 answer1 = 'No, no, n, N' #Svar för nej ska leda ur programmen
 answer2 = 'Yes, yes, y, Y' #svar för ja ska leda in till programmen
-logg = [1 "år" "månad" "dag", 2 "år" "månad" "dag", 3 "år" "månad" "dag", 4 "år" "månad" "dag"] #planera att lopa listan med "for x in logg  print(logg)"
+logg = [1 , 2 , 3 , 4 ] #planera att lopa listan med "for x in logg  print(logg)"
+datum = ["år " "månad " "dag"]
+write = "x"
 
 while menu != 4: 
     print('Välja bland menyerna (1= Visa alla logg, 2= Skapa ny logg, 3= Spara loggfilen, 4= exit programmen')
@@ -17,8 +19,9 @@ while menu != 4:
         print('Är du säker du har valt? Visa logg? Yes, yes, y, Y')
         answer = input('Yes or No ?: ')
         if answer2:
-           for x in logg
-            print(x)
+           for x in logg:
+            for y in datum:
+                print(x, y)
 
         elif answer1:
             menu = 0
@@ -26,6 +29,7 @@ while menu != 4:
         else:
             ValueError
             print("fel svar, endast: yes or no")
+            menu == 1
        
     
     elif menu == 2:
