@@ -14,11 +14,15 @@ write = 'x'
 for x in logg:
     for y in datum:
         print(x, y)
-        
+
+f = open('myfile.txt', 'w')
+
 print('välja bland loggarna: ')
 
 val = input()
-logg.insert = 1
+logg.append = 1
+f.write(input(" "))
+
 logg.insert = 2
 logg.insert = 3
 logg.insert = 4
